@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background: #f4f4f9;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* Container Styling */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Heading Styles */
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Card Styles */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* Input Fields */
+input {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 6px;
+    width: calc(30% - 12px);
+    margin: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Buttons */
+.btn-primary {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Sticky Header for Table */
+thead {
+    position: sticky;
+    top: 0;
+    background: #3498db;
+    color: white;
+}
+
+th {
+    font-weight: 600;
+}
+
+td {
+    color: #2c3e50;
+}
+
+/* Action Links */
+a {
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.edit-btn {
+    color: #f39c12;
+    font-weight: 500;
+}
+
+.edit-btn:hover {
+    text-decoration: underline;
+    color: #e67e22;
+}
+
+.delete-btn {
+    color: #e74c3c;
+    font-weight: 500;
+}
+
+.delete-btn:hover {
+    text-decoration: underline;
+    color: #c0392b;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card, table {
+    animation: fadeIn 0.5s ease-in-out;
+}
